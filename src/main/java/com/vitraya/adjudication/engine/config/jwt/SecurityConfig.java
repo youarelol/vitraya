@@ -42,12 +42,6 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-			// ✅ Public endpoints (IMPORTANT FIX)
-                         .requestMatchers(
-                            "/",
-                            "/health",
-                            "/actuator/**"
-                         ).permitAll()
                         // Permit Auth related endpoints
                         .requestMatchers("/api/v1/auth/login", "api/v1/notifications/subscribe").permitAll()
                         .requestMatchers("/api/v1/auth/validate/insurer/token").permitAll()
@@ -78,19 +72,17 @@ public class SecurityConfig {
 
     @Bean
     public AuthenticationEntryPoint unauthorizedHandler() {
-    return (request, response, authException) -> {
-        response.setContentType("application/json");
-        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-        response.getWriter().write(
-                RestAPIResponse.buildFail(
-                        HttpServletResponse.SC_UNAUTHORIZED,
-                        "Token missing or invalid",
-                        "401",
-                        "Unauthorized access"
-                ).toString()
-        );
-    };
-}
+        return (request, response, authException) -> {
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            response.getWriter().write(RestAPIResponse.buildFail(
+                            HttpServletResponse.SC_UNAUTHORIZED,
+                            "Unauthorized: You don't have permission to access this resource.",
+                            "401",
+                            "Unauthorized: You don't have permission to access this resource.")
+                    .toString());
+        };
+    }
+
     @Bean
     public AccessDeniedHandler accessDeniedHandler() {
         return (request, response, accessDeniedException) -> {
