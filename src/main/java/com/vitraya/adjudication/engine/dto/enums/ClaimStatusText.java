@@ -1,0 +1,15 @@
+package com.vitraya.adjudication.engine.dto.enums;
+
+public enum ClaimStatusText {
+    REJECTED,
+    AUTHORISED,
+    REAUTHORISED,
+    AUTHORISED_FINAL,
+    CASHLESS_DENIED,
+    AUTHORISATION_REVIEW,
+    REAUTHORIZATION_REVIEW,
+    FINAL_AUTHORIZATION_REVIEW,
+    SETTLEMENT_INITIATED,
+    QUERY,
+    DUPLICATE
+}

@@ -1,0 +1,1 @@
+alter table claim_adjudication_result add column pre_auth_identifier varchar (255);

@@ -1,0 +1,1 @@
+alter table hospital_service_type add column insurer_room_category_mapping varchar(20);

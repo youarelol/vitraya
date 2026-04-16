@@ -1,0 +1,1 @@
+alter table claim_data add column member_no varchar(50) default null;

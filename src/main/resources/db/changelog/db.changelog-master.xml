@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet id="1" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/create_initial_scheme.sql"/>
+    </changeSet>
+    <changeSet id="2" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/populate_default_data.sql"/>
+    </changeSet>
+    <changeSet id="3" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/create_policy_product_table.sql"/>
+    </changeSet>
+    <changeSet id="4" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/alter_claim_module_stats.sql"/>
+    </changeSet>
+    <changeSet id="5" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/alter_claim_module_stats_column.sql"/>
+    </changeSet>
+    <changeSet id="6" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/alter_document_master_doc_url_size.sql"/>
+    </changeSet>
+    <changeSet id="7" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/claim_admission_details.sql"/>
+    </changeSet>
+    <changeSet id="8" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_claim_data.sql"/>
+    </changeSet>
+    <changeSet id="9" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/create_table_claim_adj_result.sql"/>
+    </changeSet>
+    <changeSet id="10" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/alter_module_tables_and_others.sql"/>
+    </changeSet>
+    <changeSet id="11" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/alter_claim_adjudication_result.sql"/>
+    </changeSet>
+    <changeSet id="12" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/create_claim_transition.sql"/>
+    </changeSet>
+    <changeSet id="13" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/create_service_type.sql"/>
+    </changeSet>
+    <changeSet id="14" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/niva_request_data.sql"/>
+    </changeSet>
+    <changeSet id="15" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/insert_day_Care_proc.sql"/>
+    </changeSet>
+    <changeSet id="16" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/add_member_no_claim_data.sql"/>
+    </changeSet>
+    <changeSet id="17" author="HImalaya Patwal">
+        <sqlFile path="db/changelog/sql/column_add_claim_data.sql"/>
+    </changeSet>
+    <changeSet id="18" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/add_columns_car.sql"/>
+    </changeSet>
+    <changeSet id="19" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/user_create_token_col.sql"/>
+    </changeSet>
+    <changeSet id="20" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/add_discharge_col_car.sql"/>
+    </changeSet>
+    <changeSet id="21" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/drop_table_adjudication_result_create_table_adj_result.sql"/>
+    </changeSet>
+    <changeSet id="22" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_claim_data_add_claim_rerun.sql"/>
+    </changeSet>
+    <changeSet id="23" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_hst_add_room_type_col.sql"/>
+    </changeSet>
+    <changeSet id="24" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/add_col_claim_status_text.sql"/>
+    </changeSet>
+    <changeSet id="25" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_users_table.sql"/>
+    </changeSet>
+    <changeSet id="26" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/create_table_login_otp_trail.sql"/>
+    </changeSet>
+    <changeSet id="28" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/create_table_claim_rejection_reason_1.sql"/>
+    </changeSet>
+    <changeSet id="30" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_table_claim_adjudication_result.sql"/>
+    </changeSet>
+    <changeSet id="31" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/add_column_discharge_received_time_claim_data.sql"/>
+    </changeSet>
+    <changeSet id="29" author="Prashant Parmar">
+        <sqlFile path="db/changelog/sql/create_table_bill_module_saving.sql"/>
+    </changeSet>
+    <changeSet id="38" author="Prashant Parmar">
+        <sqlFile path="db/changelog/sql/create_table_bill_module_saving_audit.sql"/>
+    </changeSet>
+    <changeSet id="31" author="Prashant Parmar">
+        <sqlFile path="db/changelog/sql/create_table_bill_category_savings.sql"/>
+    </changeSet>
+    <changeSet id="32" author="Prashant Parmar">
+        <sqlFile path="db/changelog/sql/create_table_bill_category_savings_audit.sql"/>
+    </changeSet>
+    <changeSet id="33" author="Prashant Parmar">
+        <sqlFile path="db/changelog/sql/create_table_bill_line_item_saving.sql"/>
+    </changeSet>
+    <changeSet id="34" author="Prashant Parmar">
+        <sqlFile path="db/changelog/sql/create_table_bill_line_item_saving_audit.sql"/>
+    </changeSet>
+    <changeSet id="35" author="Prashant Parmar">
+        <sqlFile path="db/changelog/sql/alter_bill_line_saving_audit_rename_id_and_backup_id.sql"/>
+    </changeSet>
+    <changeSet id="36" author="Prashant Parmar">
+        <sqlFile path="db/changelog/sql/alter_bill_category_saving_audit_rename_id_and_backup_id.sql"/>
+    </changeSet>
+    <changeSet id="37" author="Prashant Parmar">
+        <sqlFile path="db/changelog/sql/alter_bill_module_saving_audit_rename_id_and_backup_id.sql"/>
+    </changeSet>
+    <changeSet id="38" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/alter_savings_audit_table.sql"/>
+    </changeSet>
+    <changeSet id="39" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/alter_claim_savings.sql"/>
+    </changeSet>
+    <changeSet id="40" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/alter_claim_bill_module_parse_percentage.sql"/>
+    </changeSet>
+    <changeSet id="41" author="Prahant Parmar">
+        <sqlFile path="db/changelog/sql/alter_bill_line_item_saving_add_irdai_unit_column.sql"/>
+    </changeSet>
+    <changeSet id="42" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_table_car.sql"/>
+    </changeSet>
+    <changeSet id="43" author="Prahant Parmar">
+        <sqlFile path="db/changelog/sql/alter_bill_line_item_saving_audit_add_irdai_unit_column.sql"/>
+    </changeSet>
+    <changeSet id="44" author="Prahant Parmar">
+        <sqlFile path="db/changelog/sql/alter_bill_line_item_saving_add_remark.sql"/>
+    </changeSet>
+    <changeSet id="45" author="Prahant Parmar">
+        <sqlFile path="db/changelog/sql/alter_bill_line_item_saving_audit_add_remark.sql"/>
+    </changeSet>
+    <changeSet id="46" author="Prahant Parmar">
+        <sqlFile path="db/changelog/sql/alter_bill_category_saving_add_remark.sql"/>
+    </changeSet>
+    <changeSet id="47" author="Prahant Parmar">
+        <sqlFile path="db/changelog/sql/alter_bill_category_saving_audit_add_remark.sql"/>
+    </changeSet>
+    <changeSet id="54" author="Devang chavda">
+        <sqlFile path="db/changelog/sql/ucr_tables_schema.sql"/>
+    </changeSet>
+    <changeSet id="49" author="Devang chavda">
+        <sqlFile path="db/changelog/sql/claim_data_email_flow_flag.sql"/>
+    </changeSet>
+    <changeSet id="50" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/add_txn_id_column.sql"/>
+    </changeSet>
+    <changeSet id="51" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/add_col_document_master_txn_id.sql"/>
+    </changeSet>
+    <changeSet id="52" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/add_col_claim_transition_txn_id.sql"/>
+    </changeSet>
+    <changeSet id="53" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/alter_txn_id_column_size.sql"/>
+    </changeSet>
+    <changeSet id="54" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_table_claim_add_column.sql"/>
+    </changeSet>
+    <changeSet id="55" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/add_refresh_token_col.sql"/>
+    </changeSet>
+    <changeSet id="56" author="Rishi Vashishth">
+        <sqlFile path="db/changelog/sql/modify_token_col_size.sql"/>
+    </changeSet>
+    <changeSet id="57" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_table_claim_data_add_doctor_detail.sql"/>
+    </changeSet>
+    <changeSet id="58" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_table_claim_data_add_claim_number.sql"/>
+    </changeSet>
+    <changeSet id="59" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_table_claim_data_add_column_received_reversefeed.sql"/>
+    </changeSet>
+    <changeSet id="68" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/niva_ucr_claims.sql"/>
+    </changeSet>
+    <changeSet id="69" author="Mouli Ghosh">
+        <sqlFile path="db/changelog/sql/create_claim_riders_details.sql"/>
+    </changeSet>
+    <changeSet id="74" author="Mouli Ghosh">
+        <sqlFile path="db/changelog/sql/alter_document_master_add_doc_available.sql"/>
+    </changeSet>
+    <changeSet id="77" author="Mouli Ghosh">
+        <sqlFile path="db/changelog/sql/alter_bill_tariff_response_add_doc_available.sql"/>
+    </changeSet>
+    <changeSet id="81" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/alter_table_claim_data_add_column_line_of_illness_treatment.sql"/>
+    </changeSet>
+    <changeSet id="82" author="Mouli Ghosh">
+        <sqlFile path="db/changelog/sql/error_message_logs.sql"/>
+    </changeSet>
+    <changeSet id="83" author="Mouli Ghosh">
+        <sqlFile path="db/changelog/sql/alter_error_message_logs_add_claim_stage.sql"/>
+    </changeSet>
+    <changeSet id="84" author="Mouli Ghosh">
+        <sqlFile path="db/changelog/sql/alter_error_message_logs_modify_error_message.sql"/>
+    </changeSet>
+    <changeSet id="85" author="Himalaya Patwal">
+        <sqlFile path="db/changelog/sql/create_table_niva_push_events.sql"/>
+    </changeSet>
+</databaseChangeLog>

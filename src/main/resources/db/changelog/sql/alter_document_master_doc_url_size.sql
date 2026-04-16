@@ -1,0 +1,1 @@
+alter table document_master modify column doc_path varchar(1000);

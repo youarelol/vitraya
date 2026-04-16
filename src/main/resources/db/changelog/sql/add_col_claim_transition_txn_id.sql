@@ -1,0 +1,1 @@
+alter table claim_transition add column txn_id varchar(13) not null default '';

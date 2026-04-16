@@ -1,0 +1,1 @@
+alter table claim_adjudication_result modify column claim_stage varchar(100) DEFAULT NULL;

@@ -1,0 +1,1 @@
+alter table claim_data add column discharge_received_time timestamp  default CURRENT_TIMESTAMP null;

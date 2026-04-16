@@ -1,0 +1,1 @@
+alter table claim_data add column preauth_bill_present_flag tinyint(1) default 0 null;

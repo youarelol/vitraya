@@ -1,0 +1,1 @@
+alter table claim_data add column is_email_flow boolean not null default false;

@@ -1,0 +1,1 @@
+ALTER TABLE claim_data  add column insurer_identifier Varchar(100) default null;

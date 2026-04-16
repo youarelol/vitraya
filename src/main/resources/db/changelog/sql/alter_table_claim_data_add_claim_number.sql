@@ -1,0 +1,1 @@
+alter table claim_data add column claim_number varchar(100) default null;

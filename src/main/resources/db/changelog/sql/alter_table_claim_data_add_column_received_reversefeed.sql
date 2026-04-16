@@ -1,0 +1,1 @@
+alter table claim_data add column received_reversefeed tinyint(1) default 0 null;

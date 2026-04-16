@@ -1,0 +1,1 @@
+alter table document_master add column txn_id varchar(13) not null default '';
